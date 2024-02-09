@@ -1,0 +1,1172 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../CSS/">
+      
+      
+        <link rel="next" href="../ES6/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>JS - 学习空间</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#js" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="学习空间" class="md-header__button md-logo" aria-label="学习空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            学习空间
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="学习空间" class="md-nav__button md-logo" aria-label="学习空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    学习空间
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1js" class="md-nav__link">
+    1.JS引入方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2.注释与输出
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.数据类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.循环语句
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9dom" class="md-nav__link">
+    9.DOM
+  </a>
+  
+    <nav class="md-nav" aria-label="9.DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-document" class="md-nav__link">
+    9.1 Document获取元素
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    13.节流
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ES6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ES6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VUE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1js" class="md-nav__link">
+    1.JS引入方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2.注释与输出
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.数据类型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.循环语句
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.字符串
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.数组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9dom" class="md-nav__link">
+    9.DOM
+  </a>
+  
+    <nav class="md-nav" aria-label="9.DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-document" class="md-nav__link">
+    9.1 Document获取元素
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    13.节流
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="js">JS学习教程</h1>
+<h2 id="1js">1.JS引入方式</h2>
+<pre><code>html引入（&lt;Script&gt;&lt;/Script&gt;）、本地独立JS文件引入（&lt;script type="text/javascript" src="test.js"&gt;&lt;/script&gt;和网络引入（&lt;Script src="url"&gt;&lt;/Script&gt;）。
+</code></pre>
+<h2 id="2">2.注释与输出</h2>
+<pre><code>JS注释分为两种：单行注释（//）和多行注释（/*xxx*/）。
+HTML注释：&lt;!--xxx--&gt;
+CSS注释：/*xxx*/
+注释快捷键：ctrl+?
+JS常见输出方式：alert("要输出的内容")、document.write("要输出的内容")、
+console.log("要输入的内容")。
+</code></pre>
+<h2 id="3">3.数据类型</h2>
+<pre><code>JS数据类型分为两类：基础类型和合成类型。基础类型包括数值、字符串（被单引号或双引号包裹）
+和布尔值；合成类型包括多个基础类型（用大括号来定义对象，基础类型之间用逗号隔开）。
+Undefined和null一般看成两个特殊值。
+</code></pre>
+<h2 id="4">4.运算符</h2>
+<pre><code>typeof：检测变量的数据类型。可以使用console.log(typeof x)来打印x的数据类型。
+算术运算符：加（+）减（-）乘（*）除（/）取余（%）自增/自减（++x/--x）（x++/x--）（注：
+++x和x++的区别在于前者先自增后运算，后者先运算后自增）。
+赋值运算符：等值（=）加等（+=）减等（-=）乘等（*=）除等（/=）取余等（%=）。
+比较运算符：返回布尔值。大于（&gt;）小于（&lt;）大于等于（&gt;=）小于等于（&lt;=）相等（==）
+严格相等（===）不相等（!=）不严格相等（!==）
+布尔运算符：
+取反（！）。非布尔值取反会转成布尔值，其中undefined、null、false、0、NaN和空字符串取反
+后的值为true，其他都是false。
+且运算符（&amp;&amp;）。多个条件同时满足。
+或运算符（||）。满足一个条件即可。
+条件运算符：if（布尔值）{执行A语句}else{执行B语句}（注：可以有多个else if，允许嵌套）。
+Switch（x）{case y：break；default}用于简化else if。（注：不加break会执行符合条件及其
+以后的结果）。
+三元运算符：（条件）？表达式1：表达式2。
+</code></pre>
+<h2 id="5">5.循环语句</h2>
+<pre><code>for循环：for（初始表达式；布尔表达式；迭代因子）。三个都省略会死循环。
+while语句：while（条件）{语句；}
+break与continue：break跳出循环；continue跳出当前循环。
+</code></pre>
+<h2 id="6">6.字符串</h2>
+<pre><code>字符串可以用单引号或者双引号引入，也可以互相嵌套，但是不允许单单嵌套或者双双嵌套。如果一定
+要的话，需要加上/作为转义符。同样，字符串默认一行，如果一定要换行的话也需要加转义符。
+str.charAt(x)返回第x位的字符。当x大于等于字符长度或者为复数时，返回空字符串。
+str.concat(x)将x与str相加。x可以有多个字符串，用逗号隔开。或者用+也可以相加。
+str.substring(x,y)返回第x位到第y-1位的字符串；如果省略y则到结束；如果x&gt;y则自动调转x和y的
+位置；如果有负值则自动转换成0再调整相应位置。
+str.substr(x,y)返回从第x位起长度为y的字符串；如果省略y则到结束；如果x为负数则倒数开始；如
+果y为负数则返回空字符串。
+str.indexOf(x,y)表示从第y位起匹配x，有则返回位置，没有则返回-1；省略y则直接匹配。
+str.trim(x)删除x两边的空格、制表符(\t,\v)、换行符(\n)和回车符(\r)。ES6新增
+str.trimEnd(x)和str.trimStart(x)。
+str.split('x')将str以x方式切割；如果是空字符串则切割出每个字符；如果是空内容则返回整个字
+符串；字符串后可以添加第二个参数（以逗号隔开）用来限制切割最大个数。
+</code></pre>
+<h2 id="7">7.数组</h2>
+<pre><code>数组里没有数据类型限制，允许先定义后赋值（赋值方式为str[x]，x为位置）。
+遍历数组有三种方式：
+for循环、while语句和for...in遍历（for(var i,in,str){console.log(str[i])}）。
+Array.isarray用于判断是不是数组，是则返回true，不是则返回false。
+push()可以在数组尾部添加一个或多个元素，并返回数组长度。
+pop()可以删除数组里的最后一个元素，并返回该元素。
+shift()可以删除数组里的第一个元素，并返回该元素。（可以用来清空数组，pop应该也可以）
+unshift()可以在数组头部添加一个或多个元素，并返回数组长度。
+join('x')将数组以x方式结合；如果是空内容则默认以逗号结合；如果数组元素有null或undefined
+或空位，则对应元素返回空字符串。join()和split()结合可以实现数组和字符串互相转换。
+concat()将一个或多个新数组（或其他类型数据）添加至原数组尾部。
+reverse()用于颠倒数组元素排列，可以用来生成倒序字符串。
+indexOf()与字符串中用法相同。
+</code></pre>
+<h2 id="8">8.函数</h2>
+<pre><code>通过function name(){}来定义name函数，并在后续操作中调用该函数。
+对象里包括键值对（键名（属性）-键值），可以通过对象名.属性来调用对应键值。如果属性的数据类
+型为对象，则可以形成链式调用：对象名1.对象名2.属性。
+Math对象：Math.abs(), Math.max/min(), Math.floor/ceil()（向下/上取整）, 
+Math.random()（生成[0,1)之间的伪随机数）。
+Date对象获取日期信息（显示从1970年1月1日开始前后一亿天），分别以getMonth等获取。（注：
+获取四位数年份是getFullYear）。new Date获取当前日期。getTime获取从1970年开始的毫秒数。
+</code></pre>
+<h2 id="9dom">9.DOM</h2>
+<pre><code>DOM是js操作网页的接口，全称是文档对象模型。它的作用是将静态网页转换成js脚本，方便删减元
+素。
+DOM的最小单位是节点。节点一共有七种类型：Document（顶层节点）, DocumentType（doctype
+标签）, Element（html标签）, Attribute（元素属性）, Text（文本）, Comment（注释）, 
+DocumentFragment（文档片段）。
+不同节点的nodeType属性值和对应的常量如下：文档9、元素1、属性（attr）2、文本3、文档片段11。
+</code></pre>
+<h3 id="91-document">9.1 Document获取元素</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">对象名</th>
+<th style="text-align: center;">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">document.GetElementsByTagName</td>
+<td style="text-align: center;">通过标签名获取元素</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.GetElementsByClassName</td>
+<td style="text-align: center;">通过类名获取元素动态集合</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.GetElementsByName</td>
+<td style="text-align: center;">用于有name属性的元素</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.GetElementById</td>
+<td style="text-align: center;">通过ID获取元素（不常用）</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.QuerySelector</td>
+<td style="text-align: center;">接受CSS选择器作为参数，返回第一个</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.QuertSelectorAll</td>
+<td style="text-align: center;">返回所有静态节点结合</td>
+</tr>
+<tr>
+<td style="text-align: center;">### 9.2 Document创建元素</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">对象名</td>
+<td style="text-align: center;">描述</td>
+</tr>
+<tr>
+<td style="text-align: center;">:---:</td>
+<td style="text-align: center;">:---:</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.createElement</td>
+<td style="text-align: center;">生成元素节点并返回该节点</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.createTextNode</td>
+<td style="text-align: center;">生成文本节点并返回该节点</td>
+</tr>
+<tr>
+<td style="text-align: center;">document.createAttribute</td>
+<td style="text-align: center;">生成新的属性节点</td>
+</tr>
+<tr>
+<td style="text-align: center;">### 9.3 Element属性</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">对象名</td>
+<td style="text-align: center;">描述</td>
+</tr>
+<tr>
+<td style="text-align: center;">:---:</td>
+<td style="text-align: center;">:---:</td>
+</tr>
+<tr>
+<td style="text-align: center;">Element.id</td>
+<td style="text-align: center;">返回指定对象的id（支持读写）</td>
+</tr>
+<tr>
+<td style="text-align: center;">Element.className</td>
+<td style="text-align: center;">返回指定对象的class（支持读写，不同class以空格隔开）</td>
+</tr>
+<tr>
+<td style="text-align: center;">Element.classList</td>
+<td style="text-align: center;">.add()增加.remove()移除.contain()检查存在.toggle()移入移出</td>
+</tr>
+<tr>
+<td style="text-align: center;">Element.innerHTML</td>
+<td style="text-align: center;">返回元素包含的所有HTML代码（支持读写）</td>
+</tr>
+<tr>
+<td style="text-align: center;">Element.innerText</td>
+<td style="text-align: center;">类似innerHTML，但是无法识别元素，会直接渲染成字符串</td>
+</tr>
+<tr>
+<td style="text-align: center;">### 9.4 Element获取元素位置</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">对象名</td>
+<td style="text-align: center;">描述</td>
+</tr>
+<tr>
+<td style="text-align: center;">:---:</td>
+<td style="text-align: center;">:---:</td>
+</tr>
+<tr>
+<td style="text-align: center;">clientHeight</td>
+<td style="text-align: center;">获取元素高度（包括padding，不包括border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">clientWidth</td>
+<td style="text-align: center;">获取元素宽度（包括padding，不包括border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollHeight</td>
+<td style="text-align: center;">元素总高度（包括padding，不包括border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollWidth</td>
+<td style="text-align: center;">元素总宽度（包括padding，不包括border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollLeft</td>
+<td style="text-align: center;">元素水平滚动条向右滚动的像素数量</td>
+</tr>
+<tr>
+<td style="text-align: center;">scrollTop</td>
+<td style="text-align: center;">元素水平滚动条向下滚动的像素数量</td>
+</tr>
+<tr>
+<td style="text-align: center;">offsetHeight</td>
+<td style="text-align: center;">元素的CSS垂直高度（包括padding，border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">offsetWidth</td>
+<td style="text-align: center;">元素的CSS水平宽度（包括padding，border和margin）</td>
+</tr>
+<tr>
+<td style="text-align: center;">offsetLeft</td>
+<td style="text-align: center;">到定位父级左边界的间距</td>
+</tr>
+<tr>
+<td style="text-align: center;">offsetTop</td>
+<td style="text-align: center;">到定位父级上边界的间距</td>
+</tr>
+<tr>
+<td style="text-align: center;">注：clientHeight在document.documentElement是当前窗口高度，而在document.body是实际高度。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">### 9.5 CSS操作</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">直接操作setAttribute、操作元素节点的style属性.style.属性名以及cssText属性.style.cssText。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">## 10.事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">事件分为HTML事件、DOM0级事件和DOM2级事件。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">HTML事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">```js</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><button onclick="clickHandle()">按钮</button></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">function clickHandle(){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">console.log("点击了按钮");</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">}</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">// 缺点：HTML和JS没有分开</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">```</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">DOM0事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><button id="btn">按钮</button></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">var btn = document.getElementById("btn")</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">btn.omclick = function(){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">console.log("点击了按钮");</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">}</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">// 优点：HTML和JS分开   缺点：无法同时添加多个事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">DOM2事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><button id="btn">按钮</button></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">var btn = document.getElementById("btn")</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">btn.addEventListener("click",function(){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">console.log("点击了按钮");</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">})</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">// 优点：可以同时添加多个事件   缺点：写起来麻烦</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">### 10.1 鼠标事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">事件名</td>
+<td style="text-align: center;">描述</td>
+</tr>
+<tr>
+<td style="text-align: center;">:---:</td>
+<td style="text-align: center;">:---:</td>
+</tr>
+<tr>
+<td style="text-align: center;">click</td>
+<td style="text-align: center;">按下鼠标时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">dblclick</td>
+<td style="text-align: center;">在同一个元素上双击鼠标时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">mousedown</td>
+<td style="text-align: center;">按下鼠标键时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">mouseup</td>
+<td style="text-align: center;">释放鼠标键时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">mousemove</td>
+<td style="text-align: center;">鼠标移动时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">mouseenter</td>
+<td style="text-align: center;">鼠标进入节点时触发（不包括子节点）</td>
+</tr>
+<tr>
+<td style="text-align: center;">mouseleave</td>
+<td style="text-align: center;">鼠标离开节点时触发（不包括父节点）</td>
+</tr>
+<tr>
+<td style="text-align: center;">mouseover</td>
+<td style="text-align: center;">鼠标进入节点时触发（包括子节点）</td>
+</tr>
+<tr>
+<td style="text-align: center;">mouseout</td>
+<td style="text-align: center;">鼠标离开节点时触发（包括父节点）</td>
+</tr>
+<tr>
+<td style="text-align: center;">wheel</td>
+<td style="text-align: center;">滚动滚轮时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">### 10.2 Event事件对象</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">常见Event对象属性包括Event.target和Event.type。Event.target返回事件当前所在节点；</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Event.type返回事件类型。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">常见Event对象方法包括Event.preventDefault()和Event.stopPropagation()。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Event.preventDefault()阻止默认事件的发生；</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Event.stopPropagation()阻止事件在DOM中继续传播，防止再触发定义在别的节点上的监听函数。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">### 10.3 键盘事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">事件名</td>
+<td style="text-align: center;">描述</td>
+</tr>
+<tr>
+<td style="text-align: center;">:---:</td>
+<td style="text-align: center;">:---:</td>
+</tr>
+<tr>
+<td style="text-align: center;">keydown</td>
+<td style="text-align: center;">按下键时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">keypress</td>
+<td style="text-align: center;">按下有值的键触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">keyup</td>
+<td style="text-align: center;">松开键时触发</td>
+</tr>
+<tr>
+<td style="text-align: center;">event对象keyCode：唯一标识</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">### 10.4 表单事件</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">表单事件是在使用表单元素及输入框元素时可以监听的一系列事件。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">input事件在值发生变化时触发，可以连续触发。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">select事件在选中文本时触发。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">change事件类似input，区别在于不会连续触发，只有在全部修改完时触发。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">reset事件发生在表单对象<form>上，当所有成员重置时触发。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">submit事件发生在表单对象<form>上，提交表单数据时触发。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">### 10.5 事件代理</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">将子节点的监听函数定义在父节点上，由父节点来统一处理多个子元素事件的方法叫做事件代理。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">## 11.定时器</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">setTimeout(function</td>
+<td style="text-align: center;">code,x)设定函数或代码在x毫秒后执行。clearTimeout可以取消定时器。</td>
+</tr>
+<tr>
+<td style="text-align: center;">setInterval和setTimeout用法一致，区别在于setInterval每隔一段时间执行。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">## 12.防抖</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">防抖目的是优化性能，通过设定某一操作在一定时间内只执行一次来实现。</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">```js</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><script></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">function debounce(fn,delay){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">var timer = null;</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">return function(){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">if(timer){</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">clearTimeout(timer)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">}</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">timer = setTimeout(fn,delay)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">}</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">}</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<pre><code>    window.onscroll = debounce(scrollHandle,200)
+
+    function scrollHandle(){
+        var scrollTop = document.documentElement.scrollTop;
+        console.log(scrollTop);
+    }
+&lt;/script&gt;
+</code></pre>
+<h2 id="13">13.节流</h2>
+<pre><code>节流的目的也是优化性能，通过让函数在一定时间内执行一次后失效来实现。
+&lt;script&gt;
+    function throttle(fn,delay){
+        var valid = true;
+        return function(){
+            if(!valid){
+                return false;
+            }
+            valid = false;
+            setTimeout(function(){
+                fn();
+                valid = true;
+            },delay)
+        }
+    }
+
+    window.onscroll = throttle(scrollHandle,200)
+
+    function scrollHandle(){
+        var scrollTop = document.documentElement.scrollTop;
+        console.log(scrollTop);
+    }
+&lt;/script&gt;
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
