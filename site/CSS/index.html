@@ -1,0 +1,705 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../HTML/">
+      
+      
+        <link rel="next" href="../JS/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>CSS - 学习空间</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="学习空间" class="md-header__button md-logo" aria-label="学习空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            学习空间
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="学习空间" class="md-nav__button md-logo" aria-label="学习空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    学习空间
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1css" class="md-nav__link">
+    1.CSS语法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2css" class="md-nav__link">
+    2.CSS引入方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3css" class="md-nav__link">
+    3.CSS属性
+  </a>
+  
+    <nav class="md-nav" aria-label="3.CSS属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1字体属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2背景属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3文本属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4表格属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.关系选择器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.盒子模型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.文档流
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.圆角和阴影
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.动画
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9.媒体查询
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    10.雪碧图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    11.字体图标
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VUE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1css" class="md-nav__link">
+    1.CSS语法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2css" class="md-nav__link">
+    2.CSS引入方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3css" class="md-nav__link">
+    3.CSS属性
+  </a>
+  
+    <nav class="md-nav" aria-label="3.CSS属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1字体属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2背景属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3文本属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4表格属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4.关系选择器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5.盒子模型
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6.文档流
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7.圆角和阴影
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8.动画
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    9.媒体查询
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    10.雪碧图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    11.字体图标
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="css">CSS学习教程</h1>
+<h2 id="1css">1.CSS语法</h2>
+<pre><code>css包括一个选择器和多个声明：&lt;style&gt;&lt;h1&gt;{color:red;font-size:20px}&lt;/style&gt;。
+选择器分为全局选择器*{}、元素选择器x{}（可以用span包围特定内容然后定义span）、
+类选择器.x{}（然后在标签里添加class="x"，class内容可以有多个，用空格隔开）、id
+选择器#x{}(在标签里添加id="x",id只能使用一次，不能以数字开头)和合并选择器（中间
+用逗号隔开）。选择器优先级以数字衡量：内联样式1000，id选择器样式100，类选择器10，
+元素选择器1。
+</code></pre>
+<h2 id="2css">2.CSS引入方式</h2>
+<pre><code>css引入方式分为三种：内联样式、内部样式和外部样式。
+内联样式：style="color:red;font-size:20px"
+内部样式：在head里添加style
+外部样式：新建css文件定义属性，并在head里添加&lt;link rel="stylesheet" type="text/css"
+         href="xxx.css"&gt;
+</code></pre>
+<h2 id="3css">3.CSS属性</h2>
+<h3 id="31">3.1字体属性</h3>
+<pre><code>颜色有三种定义方式：red、#ff0000、rgb(255,0,0)。（rgb可以增加透明度属性变为rgba，
+透明度区间为[0,1]）。
+大小用font-size，粗细用font-weight。粗细的值可以是normal、bold（er）、lighter，
+也可以是100-700之间（400默认正常）。
+样式用font-style，值为normal或者italic。
+类型用font-family，值必须加上引号。
+</code></pre>
+<h3 id="32">3.2背景属性</h3>
+<pre><code>背景属性包括background-color/-image/-position/-repeat/-size。
+position可以设置left top到right bottom共9种位置，同样也可以设置百分比或者具体数值。
+平铺方式repeat可以设置repeat（默认值）、repeat-x、repeat-y、no-repeat。
+size可以设置数值、百分比、cover（保持纵横比并填充目标区域的最小大小）和contain（保持
+纵横比并填充目标区域的最大大小）。
+</code></pre>
+<h3 id="33">3.3文本属性</h3>
+<pre><code>文本属性包括text-align（left、center、right）、text-decoration（underline、
+overline、line-through）、text-transform（capitalize、uppercase、lowercase）、
+text-indent（首行缩进，允许负值）。
+</code></pre>
+<h3 id="34">3.4表格属性</h3>
+<pre><code>在head里定义table{border:1px solid red;border-collapse:collapse;width:20px;height
+:20px;}。单元格内文本对齐方式：text-align和vertical-align。可以在单元格的文字和边框之
+间填充：padding。还可以设置背景颜色background-color和文本颜色color。
+表格宽度可以使用:first-child|:last-child|:nth-child(x)来设置对应列的宽度。
+</code></pre>
+<h2 id="4">4.关系选择器</h2>
+<pre><code>关系选择器分为四种：后代选择器E F{}；子代选择器E&gt;F{}；相邻兄弟选择器E+F{}；通用兄弟选择
+器E~F{}。
+</code></pre>
+<h2 id="5">5.盒子模型</h2>
+<pre><code>盒子模型包括内容content、内边距padding、边框border和外边距margin。padding可以定义上下
+和左右的宽度（中间有空格）；border定义同3.4。padding和margin可以分开定义上下左右-left等
+等。
+弹性盒子模型用来更好管理盒子间的关系。在父元素上定义属性display：flex即可。其他相关属性包
+括盒子摆放顺序flex-direction:row|row-reverse|column|column-reverse、盒子纵向摆放位置
+justify-content:flex-start|center|flex-end和横向摆放位置align-items。子元素占比通过
+flex-grow/flex来定义。
+</code></pre>
+<h2 id="6">6.文档流</h2>
+<pre><code>文档流是文档可显示内容在排列时所占用的位置。
+文档流存在的问题：大小不一时底端对齐；空格折叠；元素有空隙。
+解决方案：
+1.浮动float:left|right。
+浮动的副作用：使父元素高度塌陷；后续元素会受到影响。
+清除浮动的四种方案：设置父元素高度；受影响的元素增加clear:left|right|both；在父元素标签里
+设置overflow:hidden;clear:both；添加伪对象::after{container:"";display:block;clear:
+both}。
+2.定位position:relative|absolute|fixed
+绝对定位和固定定位都会脱离文档流。可以用left|right|top|bottom来定义位置。（注：相对定位
+和绝对定位是根据具有定位属性的父元素来调整的，如果不存在定位属性则逐级向上直至顶端。）
+</code></pre>
+<h2 id="7">7.圆角和阴影</h2>
+<pre><code>圆角border-radius。一个值：四个角（想设置成圆就输入50%或100%）；两个值：左上右下 右上左
+下；三个值：左上 右上左下 右下；四个值：左上 右上 右下 左下。
+阴影box-shadow。四个值分别代表水平阴影位置、垂直阴影位置、模糊距离和阴影颜色。
+</code></pre>
+<h2 id="8">8.动画</h2>
+<pre><code>@keyframes name{from|0%{css}percent{css}to|100%{css}}。并在元素x标签里定义
+animation:name duration timing-function delay iteration-count direction。其中
+timing-function的值包括ease（默认 变慢）、linear（匀速）、ease-in（加速）、ease-out（减
+速）、ease-in-out（先加速后减速）；direction的值包括normal和alternate。设置好后添加
+x:hover{animation-play-state:paused;}
+</code></pre>
+<h2 id="9">9.媒体查询</h2>
+<pre><code>媒体查询可以根据屏幕大小的不同显示相应内容。@media screen and (max-width:768px){x{}}
+@media screen and (min-width:768px) and (max-width:992px){x{}}@media screen and (min-width:992px){x{}}。
+</code></pre>
+<h2 id="10">10.雪碧图</h2>
+<pre><code>通过background-image引入背景图片，再通过background-position调整位置。（注：如果使用内联
+元素时需要添加display:block）
+</code></pre>
+<h2 id="11">11.字体图标</h2>
+<pre><code>优点：轻量级、灵活性、兼容性。推荐阿里字体图标库，添加并下载喜欢图标，然后在head例输入
+&lt;link rel="stylesheet" href="./iconfont.css"&gt;。定义&lt;span class="iconfont 
+icon-xxx"&gt;&lt;/span&gt;。
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

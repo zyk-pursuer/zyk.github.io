@@ -1,6 +1,6 @@
 # JS学习教程
 ## 1.JS引入方式
-    html引入（<Script></Script>）、本地独立JS文件引入（通过src目录引入）和网络引入。
+    html引入（<Script></Script>）、本地独立JS文件引入（<script type="text/javascript" src="test.js"></script>和网络引入（<Script src="url"></Script>）。
 ## 2.注释与输出
     JS注释分为两种：单行注释（//）和多行注释（/*xxx*/）。
     HTML注释：<!--xxx-->

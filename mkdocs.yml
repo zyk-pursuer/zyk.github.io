@@ -1,1 +1,14 @@
-site_name: My Docs
+site_name: 学习空间
+site_url:
+
+nav:
+    - HTML: HTML.md
+    - CSS: CSS.md
+    - JS: JS.md
+    - ES6: ES6.md
+    - VUE: VUE.md
+
+theme: 
+    name: material
+
+

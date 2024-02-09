@@ -34,6 +34,7 @@
     在head里定义table{border:1px solid red;border-collapse:collapse;width:20px;height
     :20px;}。单元格内文本对齐方式：text-align和vertical-align。可以在单元格的文字和边框之
     间填充：padding。还可以设置背景颜色background-color和文本颜色color。
+    表格宽度可以使用:first-child|:last-child|:nth-child(x)来设置对应列的宽度。
 ## 4.关系选择器
     关系选择器分为四种：后代选择器E F{}；子代选择器E>F{}；相邻兄弟选择器E+F{}；通用兄弟选择
     器E~F{}。
@@ -42,9 +43,7 @@
     和左右的宽度（中间有空格）；border定义同3.4。padding和margin可以分开定义上下左右-left等
     等。
     弹性盒子模型用来更好管理盒子间的关系。在父元素上定义属性display：flex即可。其他相关属性包
-    括盒子摆放顺序flex-direction:row|row-reverse|column|column-reverse、盒子纵向摆放位置
-    justify-content:flex-start|center|flex-end和横向摆放位置align-items。子元素占比通过
-    flex-grow/flex来定义。
+    括盒子摆放顺序flex-direction:row|row-reverse|column|column-reverse、盒子换行flex-wrap:nowrap|wrap|wrap-reverse、前两者的结合flex-flow:'flex-direction' 'flex-wrap'、盒子对齐方式justify-content:flex-start|center|flex-end|space-between|space-around、纵向对齐方式align-items:flex-start|center|flex-end|stretch|baseline和多方向对齐align-content:flex-start|center|flex-end|stretch|space-between|space-around。子元素属性包括order:<integar>（数值越小越靠前）、flex-grow:<number>（默认为0，不同数值对应不同剩余空间的分配比例）、flex-shrink:<number>（默认为1，为0的子元素不缩小）、flex-basis:auto（默认为auto，可以设置具体值表示固定大小）、前三者的结合flex:none（该属性有两个值，none（0 0 auto）和auto（1 1 auto））、align-self（有6个值flex-start|center|flex-end|stretch|baseline|auto，默认auto，继承父元素，没有父元素则等同于stretch）。
 ## 6.文档流
     文档流是文档可显示内容在排列时所占用的位置。
     文档流存在的问题：大小不一时底端对齐；空格折叠；元素有空隙。
